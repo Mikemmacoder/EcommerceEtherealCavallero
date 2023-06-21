@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ItemList from "./components/pages/itemList/itemList.jsx";
 import Navbar from "./components/layout/navbar/Navbar.jsx";
+import "./components/assets/font/font.css";
 
 function App() {
   const [saludo, setSaludo] = useState(

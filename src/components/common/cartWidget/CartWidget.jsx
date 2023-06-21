@@ -5,7 +5,7 @@ const CartWidget = () => {
   return (
     <div>
       <Badge badgeContent={1} color="primary">
-        <ShoppingCartIcon />
+        <ShoppingCartIcon sx={{ fontSize: 35 }} />
       </Badge>
     </div>
   );
