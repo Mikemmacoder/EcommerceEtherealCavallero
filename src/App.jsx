@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ItemList from "./components/pages/itemList/itemList.jsx";
-import Navbar from "./components/layout/navbar/Navbar.jsx";
+import ItemListContainer from "./components/pages/itemList/ItemListContainer";
+import Navbar from "./components/layout/navbar/Navbar";
 import "./components/assets/font/font.css";
 
 function App() {
@@ -10,8 +10,9 @@ function App() {
 
   return (
     <div>
-      <Navbar />
-      <ItemList saludo={saludo} />
+      <Navbar>
+        <ItemListContainer saludo={saludo} />
+      </Navbar>
     </div>
   );
 }

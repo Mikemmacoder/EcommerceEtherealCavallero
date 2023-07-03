@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "MiFuenteEthereal";
+  src: url("src\components\assets\font\Fontspring-DEMO-theseasons-lt.otf")
+    format("otf");
+}
+.fontEthereal {
+  font-family: "MiFuenteEthereal", sans-serif;
+}
+
+#sinPuntos {
+  list-style-type: none;
+}
+.containerNav {
+  background-color: #bfa082;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menuNav {
+  display: contents;
+  font-size: 20px;
+}
