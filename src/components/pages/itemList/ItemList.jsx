@@ -1,12 +1,11 @@
 import ProductCard from "../../common/productCard/ProductCard";
 
-const ItemList = ({ saludo, items }) => {
+const ItemList = ({ items }) => {
   console.log("llego al presentacional los items: ", items);
 
   return (
     <div>
-      <h1>{saludo}</h1>
-      <h2>Acá van los productos</h2>
+      <h1>Acá van los productos</h1>
       <div
         style={{
           width: "100%",

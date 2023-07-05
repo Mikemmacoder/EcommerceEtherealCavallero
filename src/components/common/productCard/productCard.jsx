@@ -6,6 +6,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ elemento, isInItemList = false }) => {
   return (
@@ -26,7 +27,9 @@ const ProductCard = ({ elemento, isInItemList = false }) => {
       </CardContent>
       <CardActions>
         {isInItemList ? (
-          <Button size="small">Ver detalle</Button>
+          <Link to={`/itemDetail/${elemento.id}`}>
+            <Button size="small">Ver detalle</Button>
+          </Link>
         ) : (
           <Button size="small">Eliminar del carrito</Button>
         )}

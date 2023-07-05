@@ -1,19 +1,33 @@
-import { useState } from "react";
 import ItemListContainer from "./components/pages/itemList/ItemListContainer";
-import Navbar from "./components/layout/navbar/Navbar";
+import CartContainer from "./components/pages/cart/CartContainer";
+import Layout from "./components/layout/Layout";
 import "./components/assets/font/font.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemDetail from "./components/pages/itemDetail/itemDetail";
 
 function App() {
-  const [saludo, setSaludo] = useState(
-    "Hola! Te damos la bienvenida a Ethereal"
-  );
-
   return (
-    <div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route
+            path="/category/:categoryName"
+            element={<ItemListContainer />}
+          />
+          <Route path="/itemDetail/:id" element={<ItemDetail />} />
+          <Route path="/cart" element={<CartContainer />} />
+          <Route path="/checkout" element={<h1>Aca el checkout</h1>} />
+        </Route>
+        <Route path="*" element={<h1>404 not found</h1>} />
+      </Routes>
+    </BrowserRouter>
+
+    /* <div>
       <Navbar>
-        <ItemListContainer saludo={saludo} />
+        <ItemListContainer  />
       </Navbar>
-    </div>
+    </div> */
   );
 }
 
