@@ -1,12 +1,20 @@
+import "./Counter.css";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
+
 const Counter = ({ contador, sumar, restar, onAdd }) => {
   return (
-    <div style={{ border: "2px solid steelblue", padding: "40px" }}>
-      <button onClick={sumar}>sumar</button>
-      <h3>{contador}</h3>
-      <button onClick={restar}>restar</button>
+    <>
+      <div className="contenedorCounter">
+        <AddCircleIcon onClick={sumar} />
+        <h3>{contador}</h3>
 
-      <button onClick={() => onAdd(contador)}>Agregar al carrito</button>
-    </div>
+        <RemoveCircleIcon onClick={restar} />
+      </div>
+      <div className="contenedorCounter">
+        <button onClick={() => onAdd(contador)}>Agregar al carrito</button>
+      </div>
+    </>
   );
 };
 

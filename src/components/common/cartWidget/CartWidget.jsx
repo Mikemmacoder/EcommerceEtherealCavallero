@@ -4,13 +4,11 @@ import { Link } from "react-router-dom";
 
 const CartWidget = () => {
   return (
-    <div>
-      <Link to="/cart">
-        <Badge badgeContent={1} color="primary">
-          <ShoppingCartIcon sx={{ fontSize: 35 }} />
-        </Badge>
-      </Link>
-    </div>
+    <Link to="/cart">
+      <Badge badgeContent={1} color="primary">
+        <ShoppingCartIcon sx={{ fontSize: 35 }} />
+      </Badge>
+    </Link>
   );
 };
 

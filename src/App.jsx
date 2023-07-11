@@ -4,6 +4,7 @@ import Layout from "./components/layout/Layout";
 import "./components/assets/font/font.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetail from "./components/pages/itemDetail/itemDetail";
+import NotFound from "./components/pages/NotFound";
 
 function App() {
   return (
@@ -19,15 +20,9 @@ function App() {
           <Route path="/cart" element={<CartContainer />} />
           <Route path="/checkout" element={<h1>Aca el checkout</h1>} />
         </Route>
-        <Route path="*" element={<h1>404 not found</h1>} />
+        <Route path="*" element={<h1>Not found</h1>} />
       </Routes>
     </BrowserRouter>
-
-    /* <div>
-      <Navbar>
-        <ItemListContainer  />
-      </Navbar>
-    </div> */
   );
 }
 

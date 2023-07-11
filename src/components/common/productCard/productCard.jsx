@@ -8,12 +8,12 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ elemento, isInItemList = false }) => {
+const ProductCard = ({ elemento }) => {
   return (
-    <Card sx={{ width: 345 }}>
+    <Card sx={{ width: 345, marginBottom: 5, marginTop: 5 }}>
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt={elemento.description}
         height="290"
         image={elemento.img}
       />
@@ -26,13 +26,9 @@ const ProductCard = ({ elemento, isInItemList = false }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        {isInItemList ? (
-          <Link to={`/itemDetail/${elemento.id}`}>
-            <Button size="small">Ver detalle</Button>
-          </Link>
-        ) : (
-          <Button size="small">Eliminar del carrito</Button>
-        )}
+        <Link to={`/itemDetail/${elemento.id}`}>
+          <Button size="small">Ver detalle</Button>
+        </Link>
       </CardActions>
     </Card>
   );
