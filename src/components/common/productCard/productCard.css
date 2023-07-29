@@ -1,0 +1,7 @@
+.cardP {
+  border-bottom: 1px solid rgb(175, 175, 175);
+  &:hover {
+    box-shadow: 15px 15px 40px gray;
+  }
+}
+#bfa082

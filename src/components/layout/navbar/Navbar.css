@@ -11,7 +11,7 @@
   list-style-type: none;
 }
 .containerNav {
-  background-color: #bfa082;
+  background-color: rgb(51, 51, 51);
   height: 100px;
   display: flex;
   justify-content: space-around;
@@ -23,6 +23,9 @@
 }
 
 .menuItem {
-  color: black;
+  color: white;
   text-decoration: none;
+  &:hover {
+    color: #bfa082;
+  }
 }

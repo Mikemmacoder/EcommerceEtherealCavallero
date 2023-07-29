@@ -7,12 +7,12 @@ const Navbar = () => {
     <div className="containerNav">
       <Link to="/">
         <img
-          src="/src\components\assets\img\logoEthereal.png"
+          src="/src\components\assets\img\ethereal-logo-blanco.png"
           alt="Logo Ethereal"
-          width={160}
+          width={320}
         />
       </Link>
-      <ul className="menuNav fontEthereal" id="sinPuntos">
+      <ul className="menuNav" id="sinPuntos">
         <Link to="/" className="menuItem">
           Productos
         </Link>
