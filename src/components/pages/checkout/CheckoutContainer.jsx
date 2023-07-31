@@ -11,6 +11,7 @@ import {
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Checkout from "./Checkout";
+import { Link } from "@mui/material";
 
 const CheckoutContainer = () => {
   const { cart, getTotalPrice } = useContext(CartContext);
@@ -56,14 +57,22 @@ const CheckoutContainer = () => {
 
   return (
     <div>
-      <Checkout
-        orderId={orderId}
-        handleSubmit={handleSubmit}
-        handleChange={handleChange}
-        cart={cart}
-        total={total}
-        errors={errors}
-      />
+      {orderId ? (
+        <div>
+          <h3>Gracias por tu compra</h3>
+          <h4>Tu número de compra es: {orderId}</h4>
+          <Link to="/">Volver a comprar</Link>
+        </div>
+      ) : (
+        <Checkout
+          orderId={orderId}
+          handleSubmit={handleSubmit}
+          handleChange={handleChange}
+          cart={cart}
+          total={total}
+          errors={errors}
+        />
+      )}
     </div>
   );
 };
