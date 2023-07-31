@@ -1,7 +1,7 @@
 import CartContainer from "../components/pages/cart/CartContainer";
 import CheckoutContainer from "../components/pages/checkout/CheckoutContainer";
 import FormularioFormik from "../components/pages/formularioFormik/FormularioFormik";
-import ItemDetail from "../components/pages/itemDetail/ItemDetail";
+import ItemDetailContainer from "../components/pages/itemDetail/ItemDetailContainer";
 import ItemListContainer from "../components/pages/itemList/ItemListContainer";
 
 export const routes = [
@@ -18,7 +18,7 @@ export const routes = [
   {
     id: "detalle",
     path: "/itemDetail/:id",
-    Element: ItemDetail,
+    Element: ItemDetailContainer,
   },
   {
     id: "cart",

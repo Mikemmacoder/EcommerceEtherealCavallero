@@ -8,8 +8,8 @@ import {
   updateDoc,
   doc,
 } from "firebase/firestore";
-
 import { Link } from "react-router-dom";
+import FormularioFormik from "../formularioFormik/FormularioFormik";
 
 const CheckoutContainer = () => {
   const { cart, getTotalPrice } = useContext(CartContext);
@@ -79,12 +79,13 @@ const CheckoutContainer = () => {
           <input
             type="text"
             placeholder="Ingrese su correo electrónico"
-            name="cemail"
+            name="email"
             onChange={handleChange}
           />
           <button type="submit">Comprar</button>
         </form>
       )}
+      <FormularioFormik />
     </div>
   );
 };
