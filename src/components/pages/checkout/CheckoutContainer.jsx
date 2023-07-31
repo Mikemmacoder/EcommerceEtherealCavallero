@@ -32,6 +32,7 @@ const CheckoutContainer = () => {
         items: cart,
         total,
         date: serverTimestamp(),
+        status: "generate",
       };
       //-----crear la orden en Firebase-----
       const ordersCollection = collection(db, "orders");
