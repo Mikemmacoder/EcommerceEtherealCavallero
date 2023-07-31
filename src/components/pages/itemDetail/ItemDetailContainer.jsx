@@ -43,6 +43,7 @@ const ItemDetailContainer = () => {
       onAdd={onAdd}
       totalQuantity={totalQuantity}
       producto={producto}
+      id={id}
     />
   );
 };

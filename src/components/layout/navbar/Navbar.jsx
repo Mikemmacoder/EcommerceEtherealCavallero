@@ -14,13 +14,13 @@ const Navbar = () => {
       </Link>
       <ul className="menuNav" id="sinPuntos">
         <Link to="/" className="menuItem">
-          Productos
+          productos
         </Link>
         <Link to="/category/mesas-de-comedor" className="menuItem">
-          Mesas de comedor
+          mesas de comedor
         </Link>
         <Link to="/category/mesas-de-centro" className="menuItem">
-          Mesas de centro
+          mesas de centro
         </Link>
       </ul>
 

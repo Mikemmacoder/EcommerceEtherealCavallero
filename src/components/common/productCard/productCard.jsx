@@ -1,13 +1,5 @@
-import { BorderBottom } from "@mui/icons-material";
 import "./productCard.css";
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Typography,
-} from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ elemento }) => {
