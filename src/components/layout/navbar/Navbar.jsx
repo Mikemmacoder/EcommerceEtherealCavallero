@@ -9,7 +9,7 @@ const Navbar = () => {
         <img
           src="/src\components\assets\img\ethereal-logo-blanco.png"
           alt="Logo Ethereal"
-          width={320}
+          width={300}
         />
       </Link>
       <ul className="menuNav" id="sinPuntos">

@@ -1,8 +1,26 @@
 .containerFooter {
   background-color: #bfa082;
   color: white;
-  height: 90px;
+  height: 190px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.logoFooter {
+  font-family: "MiFuenteEthereal", sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 15px;
+}
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+#icon {
+  color: white;
 }
