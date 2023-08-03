@@ -14,7 +14,7 @@ import Checkout from "./Checkout";
 import { Link } from "@mui/material";
 
 const CheckoutContainer = () => {
-  const { cart, getTotalPrice } = useContext(CartContext);
+  const { cart, getTotalPrice, clearCart } = useContext(CartContext);
   const [orderId, setOrderId] = useState("");
   let total = getTotalPrice();
 
@@ -43,6 +43,7 @@ const CheckoutContainer = () => {
           stock: product.stock - product.quantity,
         });
       });
+      clearCart();
     },
     validationSchema: Yup.object({
       name: Yup.string().required("Este campo es obligatorio"),

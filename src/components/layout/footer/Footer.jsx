@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="containerFooter">
-      <p>Derechos reservados</p>
+      <p>© 2023 ethereal Argentina</p>
     </div>
   );
 };
