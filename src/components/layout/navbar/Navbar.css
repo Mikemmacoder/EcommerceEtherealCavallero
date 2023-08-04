@@ -1,10 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
 @font-face {
-  font-family: "MiFuenteEthereal";
-  src: url("src\components\assets\font\Fontspring-DEMO-theseasons-lt.otf")
-    format("otf");
-}
-.fontEthereal {
-  font-family: "MiFuenteEthereal", sans-serif;
+  font-family: "MiFuenteRoboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 }
 .logo {
   margin-left: 50px;
@@ -24,7 +22,7 @@
 }
 .menuNav {
   display: contents;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .menuItem {

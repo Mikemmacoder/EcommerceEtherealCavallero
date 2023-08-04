@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
     let productCart = { ...producto, quantity: cantidad };
     addToCart(productCart);
     toast.success("Producto agregado exitosamente", {
-      position: "top-right",
+      position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
