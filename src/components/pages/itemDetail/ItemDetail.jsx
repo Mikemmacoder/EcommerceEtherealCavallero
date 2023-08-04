@@ -54,7 +54,7 @@ const ItemDetail = ({ onAdd, totalQuantity, producto }) => {
           )}
         </div>
       </Card>
-      <ToastContainer />;
+      <ToastContainer />
     </div>
   );
 };

@@ -6,15 +6,20 @@
 .fontEthereal {
   font-family: "MiFuenteEthereal", sans-serif;
 }
-
+.logo {
+  margin-left: 50px;
+}
 #sinPuntos {
   list-style-type: none;
 }
+.navBox {
+  margin-right: 50px;
+}
 .containerNav {
   background-color: rgb(51, 51, 51);
-  height: 120px;
+  height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .menuNav {
@@ -25,6 +30,7 @@
 .menuItem {
   color: white;
   text-decoration: none;
+  padding: 15px;
   &:hover {
     color: #bfa082;
   }
