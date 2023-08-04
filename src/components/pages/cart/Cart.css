@@ -60,3 +60,14 @@
     color: white;
   }
 }
+
+.containerAngosto {
+  display: flex;
+  flex-direction: column;
+  margin: 50 auto;
+  align-items: center;
+}
+.imgEmptyCart {
+  width: 400px;
+  margin: 20px auto;
+}

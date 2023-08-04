@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 import Swal from "sweetalert2";
 import Cart from "./Cart";
+import EmptyCart from "./EmptyCart";
 
 const CartContainer = () => {
   const { cart, clearCart, deleteById, getTotalPrice } =
@@ -26,12 +27,18 @@ const CartContainer = () => {
   };
 
   return (
-    <Cart
-      cart={cart}
-      limpiar={limpiar}
-      deleteById={deleteById}
-      getTotalPrice={getTotalPrice}
-    />
+    <div>
+      {cart.length > 0 ? (
+        <Cart
+          cart={cart}
+          limpiar={limpiar}
+          deleteById={deleteById}
+          getTotalPrice={getTotalPrice}
+        />
+      ) : (
+        <EmptyCart />
+      )}
+    </div>
   );
 };
 
