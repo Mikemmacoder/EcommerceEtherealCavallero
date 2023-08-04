@@ -1,10 +1,22 @@
 import { Button, TextField } from "@mui/material";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import { Link } from "react-router-dom";
+import "./Form.css";
 
 const Checkout = ({ handleChange, handleSubmit, errors }) => {
   return (
-    <div style={{ padding: "40px" }}>
-      <form onSubmit={handleSubmit}>
+    <div className="containerForm">
+      <div className="containerTitulo">
+        <Link to="/cart" id="linkVolver">
+          <ArrowBackIosNewIcon sx={{ fontSize: 13 }} />
+          Volver a carrito
+        </Link>
+        <h2 className="tituloCarrito">Mis datos</h2>
+      </div>
+      <form onSubmit={handleSubmit} id="Form">
         <TextField
+          margin="dense"
+          size="small"
           type="text"
           label="Nombre"
           variant="outlined"
@@ -14,6 +26,8 @@ const Checkout = ({ handleChange, handleSubmit, errors }) => {
           helperText={errors.name}
         />
         <TextField
+          margin="dense"
+          size="small"
           type="text"
           label="Apellido"
           variant="outlined"
@@ -23,6 +37,8 @@ const Checkout = ({ handleChange, handleSubmit, errors }) => {
           helperText={errors.lastName}
         />
         <TextField
+          margin="dense"
+          size="small"
           type="text"
           label="Teléfono"
           variant="outlined"
@@ -32,6 +48,8 @@ const Checkout = ({ handleChange, handleSubmit, errors }) => {
           helperText={errors.phone}
         />
         <TextField
+          margin="dense"
+          size="small"
           type="text"
           label="Email"
           variant="outlined"
@@ -41,6 +59,8 @@ const Checkout = ({ handleChange, handleSubmit, errors }) => {
           helperText={errors.email}
         />
         <TextField
+          margin="dense"
+          size="small"
           type="text"
           label="Confirmar email"
           variant="outlined"
@@ -49,8 +69,8 @@ const Checkout = ({ handleChange, handleSubmit, errors }) => {
           error={errors.repeatEmail ? true : false}
           helperText={errors.repeatEmail}
         />
-        <Button type="submit" variant="contained">
-          Enviar
+        <Button type="submit" variant="contained" id="botonComprar">
+          Comprar
         </Button>
       </form>
     </div>

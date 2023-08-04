@@ -1,0 +1,45 @@
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#Form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+#botonComprar {
+  color: black;
+  height: 40px;
+  width: 100%;
+  border: 1px solid dimgray;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #bfa082;
+  border-radius: 4px;
+  letter-spacing: normal;
+  margin: 40px 0px;
+  &:hover {
+    background-color: rgb(51, 51, 51);
+    color: white;
+  }
+}
+.tituloGracias {
+  font-size: xx-large;
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+}
+
+#checkIcon {
+  font-size: 160px;
+  color: #bfa082;
+  margin: 20px auto;
+  margin-bottom: 50px;
+}
+.center {
+  text-align: center;
+}

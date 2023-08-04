@@ -11,7 +11,9 @@ import {
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Checkout from "./Checkout";
-import { Link } from "@mui/material";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { Link } from "react-router-dom";
 
 const CheckoutContainer = () => {
   const { cart, getTotalPrice, clearCart } = useContext(CartContext);
@@ -60,10 +62,14 @@ const CheckoutContainer = () => {
   return (
     <div>
       {orderId ? (
-        <div>
-          <h3>Gracias por tu compra</h3>
-          <h4>Tu número de compra es: {orderId}</h4>
-          <Link to="/">Volver a comprar</Link>
+        <div className="containerForm">
+          <h1 className="tituloGracias">Gracias por elegirnos!</h1>
+          <CheckCircleIcon id="checkIcon" />
+          <h3 className="center">Tu número de compra es: {orderId}</h3>
+          <Link to="/" id="linkVolver">
+            <ArrowBackIosNewIcon sx={{ fontSize: 13 }} />
+            Volver a comprar
+          </Link>
         </div>
       ) : (
         <Checkout
