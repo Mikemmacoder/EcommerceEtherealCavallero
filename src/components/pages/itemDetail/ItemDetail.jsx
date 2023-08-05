@@ -21,12 +21,17 @@ const ItemDetail = ({ onAdd, totalQuantity, producto }) => {
           <CardMedia
             component="img"
             alt={producto.description}
-            height="390"
             image={producto.img}
+            className="imgProductDetail"
           />
           <div className="productDetails">
-            <CardContent>
-              <Typography gutterBottom variant="h4" component="div">
+            <CardContent id="cardProduct">
+              <Typography
+                id="detailTitle"
+                gutterBottom
+                variant="h4"
+                component="div"
+              >
                 {producto.title}
               </Typography>
               <Typography variant="body2" color="text.secondary">

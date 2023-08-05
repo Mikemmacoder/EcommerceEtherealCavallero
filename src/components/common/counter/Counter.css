@@ -25,3 +25,20 @@
     color: white;
   }
 }
+
+/*MEDIA QUERY*/
+@media (max-width: 768px) {
+  .contenedorCounter {
+    height: 40px;
+    width: 130px;
+  }
+  .buttonCounter {
+    height: 30px;
+  }
+  #addIcon {
+    font-size: 17px;
+  }
+  .cantidadCounter {
+    font-size: medium;
+  }
+}

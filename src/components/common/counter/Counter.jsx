@@ -6,10 +6,10 @@ const Counter = ({ contador, sumar, restar, onAdd, stock }) => {
   return (
     <div className="box">
       <div className="contenedorCounter">
-        <AddCircleIcon onClick={sumar} />
-        <h3>{contador}</h3>
+        <AddCircleIcon id="addIcon" onClick={sumar} />
+        <h3 className="cantidadCounter">{contador}</h3>
 
-        <RemoveCircleIcon onClick={restar} />
+        <RemoveCircleIcon id="addIcon" onClick={restar} />
       </div>
       <div className="box">
         <button onClick={() => onAdd(contador)} className="buttonCounter">

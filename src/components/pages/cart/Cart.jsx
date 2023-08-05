@@ -27,19 +27,33 @@ const Cart = ({ cart, limpiar, deleteById, getTotalPrice }) => {
                 alt={elemento.description}
                 className="imgProduct"
               />
-              <Typography gutterBottom variant="h6" component="h1">
-                {elemento.title}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                <span>
-                  <strong>Precio: $</strong>
-                </span>
-                {elemento.price}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                <span>Cantidad: {elemento.quantity}</span>
-              </Typography>
-
+              <div className="detailCart">
+                <Typography
+                  gutterBottom
+                  variant="h6"
+                  component="h1"
+                  id="tituloCart"
+                >
+                  {elemento.title}
+                </Typography>
+                <Typography
+                  id="margenTexto"
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  <span>
+                    <strong>Precio: $</strong>
+                  </span>
+                  {elemento.price}
+                </Typography>
+                <Typography
+                  id="margenTexto"
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  <span>Cantidad: {elemento.quantity}</span>
+                </Typography>
+              </div>
               <DeleteIcon onClick={() => deleteById(elemento.id)} />
             </div>
           );

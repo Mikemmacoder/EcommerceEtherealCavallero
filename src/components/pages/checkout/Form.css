@@ -35,11 +35,39 @@
 }
 
 #checkIcon {
-  font-size: 160px;
+  font-size: 260px;
   color: #bfa082;
   margin: 20px auto;
   margin-bottom: 50px;
 }
 .center {
   text-align: center;
+}
+/*MEDIA QUERY*/
+@media (max-width: 900px) {
+  .containerForm {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .containerForm {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .containerForm {
+    width: 90%;
+  }
+  #botonComprar {
+    margin: 10px 0px;
+  }
+  .tituloGracias {
+    margin: 50px 0px 30px 0px;
+  }
+  #checkIcon {
+    font-size: 160px;
+    color: #bfa082;
+    margin: 20px auto;
+    margin-bottom: 50px;
+  }
 }

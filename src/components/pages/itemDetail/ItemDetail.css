@@ -25,3 +25,19 @@
   justify-content: flex-start;
   align-items: center;
 }
+.imgProductDetail {
+  height: 390px;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 768px) {
+  .imgProductDetail {
+    height: 190px;
+  }
+  #detailTitle {
+    font-size: larger;
+  }
+  #cardProduct {
+    padding-bottom: 0px;
+  }
+}
