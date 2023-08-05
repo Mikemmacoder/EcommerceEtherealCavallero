@@ -13,7 +13,7 @@ const EmptyCart = () => {
         <h2 className="tituloCarrito">Carrito vacío</h2>
       </div>
       <img
-        src="src\components\assets\img\empty_cart_co35.png"
+        src="https://res.cloudinary.com/dmmszaubf/image/upload/v1691258892/empty_cart_co35_ogmxus.png"
         alt="empty cart"
         className="imgEmptyCart"
       />

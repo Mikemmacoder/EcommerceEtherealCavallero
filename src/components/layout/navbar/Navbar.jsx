@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="containerNav">
           <Link to="/">
             <img
-              src="/src\components\assets\img\ethereal-logo-blanco.png"
+              src="https://res.cloudinary.com/dmmszaubf/image/upload/v1689791873/ethereal-logo-blanco_j1seyl.png"
               alt="Logo Ethereal"
               width={280}
               className="logo"

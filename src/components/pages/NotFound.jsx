@@ -3,7 +3,7 @@ const NotFound = () => {
     <div>
       <h1>404 not found</h1>
       <img
-        src="src\components\assets\img\Page_not_found.png"
+        src="https://res.cloudinary.com/dmmszaubf/image/upload/v1689791876/Page_not_found_i3u8n8.png"
         alt="Error 404"
         className="imgEmptyCart"
       />
