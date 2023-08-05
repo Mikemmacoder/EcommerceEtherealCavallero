@@ -1,5 +1,5 @@
 import { Skeleton } from "@mui/material";
-import ProductCard from "../../common/productCard/ProductCard";
+import ProductCard from "/src/components/common/productCard/ProductCard.jsx";
 
 const ItemList = ({ items }) => {
   let arr = [1, 2, 3];
@@ -21,8 +21,6 @@ const ItemList = ({ items }) => {
             return (
               <div key={e}>
                 <Skeleton variant="rectangular" width={345} height={290} />
-                {/* <Skeleton variant="circular" width={40} height={40} /> 
-                <Skeleton variant="rounded" width={210} height={70} />*/}
                 <Skeleton variant="text" width={150} height={80} />
                 <Skeleton variant="text" width={100} height={55} />
               </div>
