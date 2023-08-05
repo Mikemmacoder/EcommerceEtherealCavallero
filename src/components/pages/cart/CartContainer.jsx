@@ -10,9 +10,9 @@ const CartContainer = () => {
 
   const limpiar = () => {
     Swal.fire({
-      title: "Seguro quieres limpiar el carrito?",
+      title: "Seguro quieres vaciar el carrito?",
       showDenyButton: true,
-      confirmButtonText: "Sí, limpiar carrito",
+      confirmButtonText: "Sí, vaciar carrito",
       denyButtonText: `No, no eliminar`,
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
