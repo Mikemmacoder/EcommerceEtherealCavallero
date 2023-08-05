@@ -1,5 +1,5 @@
 import { Skeleton } from "@mui/material";
-import ProductCard from "../../common/productCard/productCard.jsx";
+import ProductCard from "../../common/productCard/productCard";
 
 const ItemList = ({ items }) => {
   let arr = [1, 2, 3];
