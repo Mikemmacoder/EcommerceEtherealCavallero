@@ -1,4 +1,4 @@
-import ProductCard from "../../common/productCard/ProductCard";
+import ProductCard from "/src/components/common/productCard/ProductCard";
 import { Skeleton } from "@mui/material";
 
 const ItemList = ({ items }) => {
