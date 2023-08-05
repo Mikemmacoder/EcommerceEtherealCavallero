@@ -7,11 +7,13 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="containerFooter">
-      <img
-        src="https://res.cloudinary.com/dmmszaubf/image/upload/v1689791873/ethereal-logo-blanco_j1seyl.png"
-        alt="Logo Ethereal"
-        width={320}
-      />
+      <div className="containerImg">
+        <img
+          src="https://res.cloudinary.com/dmmszaubf/image/upload/v1689791873/ethereal-logo-blanco_j1seyl.png"
+          alt="Logo Ethereal"
+          width={320}
+        />
+      </div>
       <p>© 2023 ethereal - Córdoba Argentina</p>
       <div className="iconsContainer">
         <a href="https://wa.me/+543512086395" target="blank">

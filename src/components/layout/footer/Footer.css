@@ -1,13 +1,18 @@
 .containerFooter {
   background-color: #bfa082;
   color: white;
-  height: 190px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-
+.containerImg {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .iconsContainer {
   display: flex;
   flex-direction: row;
